@@ -307,10 +307,10 @@ export async function  products(){
     return newproducts;
 }
 
-
 export async function tableproducts(){
     const products = [
         {   
+            index: 1,
             img: "/shirt-1.jpg",
             prodname: "SHIRT",
             decription: "Pure Garment Dyed Cotton Shirt",
@@ -319,6 +319,7 @@ export async function tableproducts(){
             status:"Active"
         },
         {   
+            index: 2,
             img: "/sports-1.jpg",
             prodname: "SPORTS",
             decription: "Trecking And running shoes- Black",
@@ -327,6 +328,7 @@ export async function tableproducts(){
             status:"Scheduled"
         },
         {   
+            index: 3,
             img: "/watch-1.jpg",
             prodname: "WATCHES",
             decription: "Smart Watches Vital Plus",
@@ -335,6 +337,7 @@ export async function tableproducts(){
             status:"Draft"
         },
         {   
+            index: 4,
             img: "/watch-2.jpg",
             prodname: "WATCHES",
             decription: "Pocket Watch LEather Pouch",
@@ -343,6 +346,7 @@ export async function tableproducts(){
             status:"Draft"
         },
         {   
+            index: 5,
             img: "/shirt-1.jpg",
             prodname: "SHIRT",
             decription: "Pure Garment Dyed Cotton Shirt",
@@ -351,6 +355,7 @@ export async function tableproducts(){
             status:"Active"
         },
         {   
+            index: 6,
             img: "/sports-1.jpg",
             prodname: "SPORTS",
             decription: "Trecking And running shoes- Black",
@@ -359,6 +364,7 @@ export async function tableproducts(){
             status:"Scheduled"
         },
         {   
+            index: 7,
             img: "/watch-1.jpg",
             prodname: "WATCHES",
             decription: "Smart Watches Vital Plus",
@@ -367,6 +373,7 @@ export async function tableproducts(){
             status:"Draft"
         },
         {   
+            index: 8,
             img: "/watch-2.jpg",
             prodname: "WATCHES",
             decription: "Pocket Watch LEather Pouch",
@@ -375,6 +382,7 @@ export async function tableproducts(){
             status:"Draft"
         },
         {   
+            index: 9,
             img: "/shirt-1.jpg",
             prodname: "SHIRT",
             decription: "Pure Garment Dyed Cotton Shirt",
@@ -383,6 +391,7 @@ export async function tableproducts(){
             status:"Active"
         },
         {   
+            index: 10,
             img: "/sports-1.jpg",
             prodname: "SPORTS",
             decription: "Trecking And running shoes- Black",
@@ -391,6 +400,7 @@ export async function tableproducts(){
             status:"Scheduled"
         },
         {   
+            index: 11,
             img: "/watch-1.jpg",
             prodname: "WATCHES",
             decription: "Smart Watches Vital Plus",
@@ -399,6 +409,7 @@ export async function tableproducts(){
             status:"Draft"
         },
         {   
+            index: 12,
             img: "/watch-2.jpg",
             prodname: "WATCHES",
             decription: "Pocket Watch LEather Pouch",
@@ -407,6 +418,7 @@ export async function tableproducts(){
             status:"Draft"
         },
         {   
+            index: 13,
             img: "/shirt-1.jpg",
             prodname: "SHIRT",
             decription: "Pure Garment Dyed Cotton Shirt",
@@ -415,6 +427,7 @@ export async function tableproducts(){
             status:"Active"
         },
         {   
+            index: 14,
             img: "/sports-1.jpg",
             prodname: "SPORTS",
             decription: "Trecking And running shoes- Black",
@@ -423,6 +436,7 @@ export async function tableproducts(){
             status:"Scheduled"
         },
         {   
+            index: 15,
             img: "/watch-1.jpg",
             prodname: "WATCHES",
             decription: "Smart Watches Vital Plus",
@@ -431,6 +445,7 @@ export async function tableproducts(){
             status:"Draft"
         },
         {   
+            index: 16,
             img: "/watch-2.jpg",
             prodname: "WATCHES",
             decription: "Pocket Watch LEather Pouch",

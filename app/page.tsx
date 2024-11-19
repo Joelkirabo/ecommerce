@@ -9,6 +9,7 @@ import Header2 from "@/components/Header2";
 import {categories, products} from "@/actions/db";
 
 export type ProductProps = {
+  index?: number,
   img: string,
   prodname: string,
   decription: string,
