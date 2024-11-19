@@ -19,3 +19,16 @@
 }
 
 
+.scheduled{
+  @apply border border-blue-500 py-0.5 px-2 rounded-full bg-blue-50 text-blue-500
+}
+
+.active{
+  @apply border border-green-500 py-0.5 px-2 rounded-full bg-green-50 text-green-500
+}
+
+.draft{
+  @apply border border-orange-500 py-0.5 px-2 rounded-full bg-orange-50 text-orange-500
+}
+
+
