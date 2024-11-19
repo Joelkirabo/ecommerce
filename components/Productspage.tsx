@@ -4,8 +4,6 @@ import { Filter, Plus } from "lucide-react";
 import Image from "next/image";
 import { useState } from "react";
 
-
-
 export default function Productspage({tableprods}:{tableprods:ProductProps[]}){
 
     const [currentpage, setcurrentpage] = useState(1);
