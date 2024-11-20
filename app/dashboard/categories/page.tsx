@@ -24,7 +24,6 @@ export default function categories(){
         data.slug = data.categoryname.toLowerCase().split(" ").join("-");
         const returnedmessages = await savecategory(data)
         setmessages(returnedmessages);
-        console.log(returnedmessages);
         reset()
         if(returnedmessages.success === true){
             router.push("/")

@@ -2,6 +2,6 @@
 
 export default function dashboard(){
     return(
-        <div className="bg-green-500 w-full">dashboard</div>
+        <div className="bg-gray-100 w-full h-full">Go away. Nothing to see here hahaha</div>
     )
 }

@@ -14,7 +14,6 @@ export default function Newproducts({prods}:{prods:ProductProps[]}) {
        <div className="font-bold text-center">New Products</div>
        <div className="flex pt-3 flex flex-wrap justify-center gap-3">
 
-
         {
             newproducts.map((product,i)=>(
                 <div key={i} className="flex flex-col border border-gray-100 p-3 w-[150px]">
