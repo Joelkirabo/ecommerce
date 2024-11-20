@@ -31,4 +31,19 @@
   @apply border border-orange-500 py-0.5 px-2 rounded-full bg-orange-50 text-orange-500
 }
 
+.error{
+    animation: fadeout 3s forwards;
+}
+
+@keyframes fadeout{
+  0%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 

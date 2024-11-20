@@ -1,6 +1,6 @@
 import { ProductProps } from "@/app/page";
-import { Star } from "lucide-react";
 import Image from "next/image";
+import { FaRegStar, FaStar } from "react-icons/fa";
 
 
 
@@ -26,34 +26,54 @@ export default function Newproducts({prods}:{prods:ProductProps[]}) {
                     <div className="text-gray-500 text-sm md:text-lg">{product.decription}</div>
                     <div className="flex">
                         {
-                            product.rating === 1?( <Star className="text-pink-500 text-sm md:text-lg"/>)
+                            product.rating === 1?
+
+                            (
+                                <>
+                                 <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                                <FaRegStar className="text-orange-500 text-sm md:text-lg"/>
+                                <FaRegStar className="text-orange-500 text-sm md:text-lg"/>
+                                <FaRegStar className="text-orange-500 text-sm md:text-lg"/>
+                                <FaRegStar className="text-orange-500 text-sm md:text-lg"/>
+                                </>
+                            )
                             :product.rating === 2?
                             ( <>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
+                            <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaRegStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaRegStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaRegStar className="text-orange-500 text-sm md:text-lg"/>
                             </>
                             )
                             :product.rating === 3?
                             ( <>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
+                             <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaRegStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaRegStar className="text-orange-500 text-sm md:text-lg"/>
                             </>
                             )
                             :product.rating === 4?
                             ( <>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
+                            <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaRegStar className="text-orange-500 text-sm md:text-lg"/>
+                         
                             </>
                             )
                             :product.rating === 5?
                             ( <>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
-                            <Star className="text-pink-500 text-sm md:text-lg"/>
+                             <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                            <FaStar className="text-orange-500 text-sm md:text-lg"/>
+                          
+                         
                             </>
                             )
                             :""
