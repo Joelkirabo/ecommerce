@@ -11,7 +11,7 @@ export default function Header2() {
         <div className="flex gap-4 p-2 items-center">
             <div className="font-bold text-2xl">Ecom</div>
             <div className="w-full flex justify-center items-center relative">
-                <input className="border border-gray-200 w-full px-2 py-1 rounded text-xs" type="search"  placeholder="Search products..."/>
+                <input className="border border-gray-200 w-full px-2 py-1 rounded text-xs focus:outline-none" type="search"  placeholder="Search products..."/>
                 <Search size={20} className="absolute right-2 text-gray-500"/>
             </div>
             <div className="hidden sm:flex gap-2 text-gray-500">
