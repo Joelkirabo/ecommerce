@@ -1,12 +1,13 @@
 "use client"
 
+import { CategoryProps } from "@/app/page";
 import { BriefcaseBusiness, MenuIcon, Heart, HomeIcon, User} from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 
 
-export default function Navbar({cats}:{cats:string[]}) {
+export default function Navbar({cats}:{cats:CategoryProps[]}) {
     const [visible, setvivisible] = useState(false);
     const route = useRouter();
 
@@ -21,7 +22,7 @@ export default function Navbar({cats}:{cats:string[]}) {
                 <MenuIcon />
                 <div className={`${visible?"absolute bottom-full left-[-50%] grid bg-gray-50 rounded w-64 grid-cols-3 gap-2 z-50 mb-5 shadow ":"absolute bottom-full left-[-50%] hidden bg-gray-200 rounded w-64 grid-cols-3 gap-2 z-50 mb-5 "} `}>{
                     cats.map((cat,i)=>(
-                        <div className="text-gray-500 hover:text-pink-500 m-2" key={i}>{cat}</div>
+                        <div className="text-gray-500 hover:text-pink-500 m-2" key={i}>{cat.categoryname}</div>
                     ))
                 }
                 </div>

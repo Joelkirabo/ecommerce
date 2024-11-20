@@ -1,11 +1,46 @@
+"use server"
 
 
+import { CategoryProps } from '@/app/page';
+import { prisma } from '@/lib/prisma';
 
 export async function  categories(){
-    const categories = ["shoes","bags","shoes","bags","shoes","bags","shoes","bags"];
-    return categories;
+    try {
+        const categories = await prisma.category.findMany();
+        return categories as CategoryProps[]
+    }  
+    catch (error) {
+        console.log(error)
+    }
 }
 
+export async function savecategory(data:CategoryProps){
+    const{categoryname,slug} = data;
+
+    const alreadyexists = await prisma.category.findUnique({
+        where: {slug:slug}
+    })
+    if(alreadyexists){
+        return {
+            success:false,
+            error: 'Category already exists'
+        }
+    }else{
+        await prisma.category.create({
+            data:{
+                categoryname,
+                slug
+            }
+         }       
+        )
+        return {
+            success:true,
+            error:'Category added successfully'
+        }
+
+    }
+   
+}
 
 export async function  products(){
     const newproducts = [

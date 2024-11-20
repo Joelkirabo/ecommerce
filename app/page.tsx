@@ -18,8 +18,17 @@ export type ProductProps = {
   status?:string
 }
 
+export type CategoryProps={
+  id: string,
+  categoryname: string,
+  slug: string,
+  createdAt: Date,
+  updatedAt: Date
+}
+
 export default async function Home() {
-  const cats:string[] = await categories()
+  const cats:CategoryProps[] = await categories() || []
+
   const prods:ProductProps[]= await products()
   return (
    <div className="pb-20">
